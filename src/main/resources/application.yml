@@ -1,0 +1,21 @@
+telegram:
+  name: BotMother
+  token: 5446765646:AAHmW9gtVGxtNQWkSnM5vfDbbqwnyMv2C24
+  registrarType: DEFAULT
+
+server:
+  port: 7171
+
+logging:
+  level:
+    ru: DEBUG
+
+spring:
+  liquibase:
+    change-log: schema/master.xml
+    drop-first: true
+  datasource:
+    url: jdbc:postgresql://localhost:5432/telegrambots
+    username: postgres
+    password: 1234
+    driverClassName: org.postgresql.Driver

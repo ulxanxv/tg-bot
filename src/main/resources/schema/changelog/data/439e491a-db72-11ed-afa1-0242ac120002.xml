@@ -1,0 +1,19 @@
+<databaseChangeLog
+		xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.4.xsd">
+
+	<changeSet id="439e491a-db72-11ed-afa1-0242ac120002" author="Artem Ulyanov">
+		<insert tableName="command">
+			<column name="code" value="DEFAULT"/>
+			<column name="path" value="default"/>
+			<column name="description" value="Неизвестная команда"/>
+		</insert>
+		<insert tableName="command">
+			<column name="code" value="START"/>
+			<column name="path" value="/start"/>
+			<column name="description" value="Просмотр всех доступных действий"/>
+		</insert>
+	</changeSet>
+
+</databaseChangeLog>
